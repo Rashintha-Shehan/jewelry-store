@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #fff;
+  color: #333;
+  padding: 30px 55px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Left Section: Mobile Number + Logo */
+.left-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.mobile-phone {
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.phone-icon {
+  color: #DAA520;
+  margin-right: 8px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* Navbar Links */
+.navbar-container {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #DAA520;
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  width: 180px;
+  display: block;
+  padding: 10px 0;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+}
+
+.dropdown-menu li a {
+  color: #333;
+  display: block;
+  width: 100%;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f8f8f8;
+}
+
+/* Cart Link - Positioned Next to Contact */
+.cart-link {
+  position: relative;
+}
+
+.cart-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.cart-icon:hover {
+  color: #DAA520;
+}
+
+/* Cart Count (Badge) */
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: #DAA520;
+  color: #fff;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .left-section {
+    align-items: center;
+    width: 100%;
+  }
+
+  .mobile-phone {
+    justify-content: center;
+  }
+
+  .logo {
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar-container {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}

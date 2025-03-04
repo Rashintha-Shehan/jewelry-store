@@ -1,0 +1,119 @@
+/* Adding the font-family from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --black: #222;
+    --cream: #faf9f7;
+    --white: white;
+    --gold: #8d8c8b;
+    --black-70: rgba(34, 34, 34, 0.7);
+    --whitesmoke: #f5f5f5;
+}
+
+/* Apply the new font-family globally */
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.about-container {
+    font-family: 'Roboto', sans-serif;
+    color: var(--black);
+    background-color: var(--cream);
+    padding: 40px;
+}
+
+.about-hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+}
+
+.about-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.about-hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-section, 
+.craftsmanship-section, 
+.values-section, 
+.work-with-us {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.about-section h2, 
+.craftsmanship-section h2, 
+.values-section h2, 
+.work-with-us h2 {
+    font-size: 2rem;
+    color: var(--black); /* Black color */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-section p, 
+.craftsmanship-section p, 
+.work-with-us p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--black-70);
+    text-align: justify;
+}
+
+.craftsmanship-details h3 {
+    color: var(--black);
+    margin-top: 20px;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.value-item {
+    background: var(--whitesmoke);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.value-item:hover {
+    background: var(--gold);
+    color: var(--white);
+}
+
+.value-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.value-item p {
+    font-size: 1rem;
+    color: var(--black-70);
+}
+
+.work-with-us {
+    text-align: center;
+    background: var(--gold); /* Gold background */
+    color: var(--white);
+    padding: 50px 20px;
+    border-radius: 10px;
+}
+
+.work-with-us p {
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.2rem;
+}

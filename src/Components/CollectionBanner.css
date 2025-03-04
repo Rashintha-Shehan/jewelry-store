@@ -1,0 +1,65 @@
+/* Collection Banner */
+.collection-banner {
+    position: relative;
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.collection-banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.banner-content h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.banner-content h2 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.banner-content p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Modern SHOP NOW button */
+.shop-now {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #181717;  /* White text for contrast */
+    background: white; /* Smooth navy gradient */
+    border: 2px solid #36383a; /* Lighter blue border for definition */
+    border-radius: 10px; /* Sleek, modern rounded edges */
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+}
+
+.shop-now:hover {
+    background: #cdcecf; /* Slightly darker navy */
+    border-color: #003366; /* Adjust border color */
+    transform: scale(1.05); /* Hover effect */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+    color: black;
+}
