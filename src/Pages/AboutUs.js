@@ -85,13 +85,10 @@ const AboutUs = () => {
       </section>
 
       <section className="work-with-us">
-        <h2>Let's Work Together</h2>
-        <p>
-          Whether you’re looking for a custom piece, collaboration, or
-          wholesale, we would love to hear from you. Let’s create something
-          timeless together.
-        </p>
-      </section>
+  <h2>Let's Work Together!</h2>
+  <button className="work-button">Get in Touch</button>
+</section>
+
     </div>
   );
 };

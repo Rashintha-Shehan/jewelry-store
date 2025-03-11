@@ -2,6 +2,7 @@
     display: flex;
     height: calc(100vh - 50px); /* Adjust height to account for navbar height */
     margin-top: 50px; /* Add margin to push the homepage below the navbar */
+    justify-content: center; /* Center content horizontally */
 }
 
 /* Left half styles */
@@ -12,17 +13,18 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    padding: 40px;  /* Increase padding for more space around content */
+    margin-right: 20px;  /* Add margin on the right side for more space between left and right */
 }
 
 .left-half h1 {
-    font-size: 48px; /* Increased size of the heading */
-    font-weight: 700;
+    font-size: 90px; /* Increased size of the heading */
+    font-weight: 200;
     color: #333;
     text-transform: uppercase;  /* Optional: To make the heading uppercase */
     margin-bottom: 20px;  /* Add some space below the heading */
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
 
 .left-half p {
     font-size: 18px;
@@ -54,7 +56,7 @@
     flex-direction: column;  /* Image will now be centered vertically */
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 40px;  /* Increase padding for more space around content */
 }
 
 .right-top {
@@ -62,8 +64,8 @@
 }
 
 .homepage-img {
-    width: 400px;  /* Set image width to 500px */
-    height: 500px;  /* Set image height to 600px */
+    width: 420px;  /* Increase image width slightly */
+    height: 480px;  /* Adjust image height to match the width ratio */
     object-fit: cover;  /* Ensures the image scales without distortion */
     border-radius: 12px;
     transition: transform 0.3s ease-in-out;
@@ -75,8 +77,13 @@
         flex-direction: column;  /* Stack elements vertically */
     }
 
+    .left-half {
+        padding: 20px;
+        margin-right: 0; /* Remove right margin for smaller screens */
+    }
+
     .right-half {
-        flex-direction: column; /* Stack the images vertically */
+        padding: 20px;
     }
 
     .homepage-img {

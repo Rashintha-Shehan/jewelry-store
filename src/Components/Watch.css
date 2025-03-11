@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .watch-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjusted grid for auto-fill */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+    margin-top: 80px; /* Added top margin to account for navbar */
+  }
+  
+  .watch-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Added for proper vertical stacking */
+    justify-content: space-between; /* Make sure buttons don't overlap */
+    height: 100%; /* Ensure items have consistent height */
+  }
+  
+  .watch-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  .watch-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-height: 300px; /* Limit the height of the image */
+    object-fit: cover; /* Ensure image covers space properly */
+  }
+  
+  .watch-info {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .watch-price {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .watch-rating {
+    margin-bottom: 10px;
+  }
+  
+  .star {
+    font-size: 20px;
+    color: #ccc;
+  }
+  
+  .star.filled {
+    color: gold;
+  }
+  
+  .buy-now, .wishlist-btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px 0;
+  }
+  
+  .buy-now:hover, .wishlist-btn:hover {
+    background-color: #333;
+  }
+  
+  .wishlist-btn {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .wishlist-btn:hover {
+    background-color: rgba(0, 0, 0, 1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .watch-container {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .watch-container {
+      grid-template-columns: 1fr; /* Single column on small screens */
+    }
+    .watch-item {
+      padding: 15px;
+    }
+    .watch-price {
+      font-size: 16px;
+    }
+    .buy-now, .wishlist-btn {
+      padding: 8px 16px;
+    }
+  }
+  

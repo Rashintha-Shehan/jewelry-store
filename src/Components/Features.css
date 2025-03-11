@@ -1,42 +1,50 @@
 .features-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    flex-wrap: wrap;  /* Allows items to stack on smaller screens */
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;  /* Allows items to stack on smaller screens */
+}
+
+.feature-item {
+  flex: 1;
+  text-align: center;
+  margin: 10px;
+}
+
+.feature-item h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  font-weight: bold;
+  text-decoration: none;  /* Ensure the heading is not underlined */
+}
+
+.feature-item p {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;  /* Ensure some space between description and title */
+  text-decoration: none;  /* Ensure the price is not underlined */
+}
+
+.feature-icon {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+/* Removing underline from Links */
+.feature-item a {
+  text-decoration: none;  /* Remove underline from links */
+  color: inherit;  /* Keep text color as per the parent text (no blue) */
+}
+
+@media (max-width: 768px) {
+  .features-container {
+    flex-direction: column;
+    align-items: center;  /* Center-align items on smaller screens */
   }
-  
+
   .feature-item {
-    flex: 1;
-    text-align: center;
-    margin: 10px;
+    flex: none;  /* Prevent items from stretching on smaller screens */
+    margin: 20px 0;
   }
-  
-  .feature-item h3 {
-    font-size: 20px;
-    margin: 10px 0;
-    font-weight: bold;
-  }
-  
-  .feature-item p {
-    font-size: 14px;
-    color: #666;
-  }
-  
-  .feature-icon {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 10px;
-  }
-  
-  @media (max-width: 768px) {
-    .features-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .feature-item {
-      flex: none;
-      margin: 20px 0;
-    }
-  }
-  
+}
